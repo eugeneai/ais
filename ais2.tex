@@ -1,4 +1,4 @@
-\documentclass[14pt, openany, twoside, final]{extbook} % Computer Modern font calls
+\documentclass[a4paper,14pt, openany, twoside, final]{extbook} % computer modern font calls
 %\usepackage[usenames]{color}
 %\usepackage{fancybox}
 %\usepackage{algorithmic} % noend
@@ -11,9 +11,11 @@
 % Main style definition
 % ---------------------
 % ISU standard handbook
-% \usepackage[handbook,fancybot,times,inconsolata,smalltitles,listbib,microtyping]{subook}
+%\usepackage[handbook,fancybot,times,inconsolata,smalltitles,listbib,microtyping]{subook}
 % ISU standard monograph (less restrictive and more artistic)
 % \usepackage[monograph,mag,times,smalltitles,fancybot,listbib,ptfonts,microtyping]{subook}
+
+\usepackage[handbook,times,fancybot,inconsolata,smalltitles,listbib,microtyping]{subook} % Looks Good
 
 % Some artistism for monograph
 % ----------------------------
@@ -81,8 +83,9 @@
 
 %\lstset{language=Prolog, morecomment=[l]{\%}}
 \renewcommand{\chaptername}{} % for ISU Handbooks
-\newcommand{\refname}{Рекомендуемая литература} % ... also
-\renewcommand{\bibname}{\refname}
+%\newcommand{\refname}{Рекомендуемая литература} % ... also
+%\renewcommand{\bibname}{\refname}
+%\newenvironment{mygroup}{}{}
 \begin{titlepage}
 \thispagestyle{empty}
 \begin{center}{\small{}
@@ -9540,4 +9543,5 @@ Intelligence Artificielle): Translation from French - Moscow: Mir,
 % TeX-engine: lualatex
 % TeX-parse-self: t
 % TeX-auto-save: t
+% TeX-master: t
 % End:
