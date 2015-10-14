@@ -168,16 +168,18 @@
 }
 \vfill
  \vspace{2em}
-{\large\sutitlefont КОМПЬЮТЕРНЫЕ НАУКИ}\\{\sutitlefont В четырех частях\\Часть 4}\\
+{\huge\sutitlefont\bfseries КОМПЬЮТЕРНЫЕ НАУКИ}\\[1em]{\normalfont\normalsize\sfcpshape В четырех частях\\[0.7em]Часть 4}\\[1.5em]
 \hbox to \linewidth{\hfill\sutitlefont Е.~А.~Черкашин\hfill}
-{\large\sutitlefont Системы искусственного интеллекта}
- \vspace{2em}
+\vspace{0.7em}
+{\Large\sutitlefont Системы искусственного интеллекта}
+ \vspace{1em}
 
-{\sutitlefont Учебное пособие}
+{\normalsize\ptserif\sffamily\itshape Учебное пособие}
 \vfill
 %\vfill
 \vfill
- \textbf{\sutitlefont Иркутск 2014}
+% \textbf{\sutitlefont Иркутск 2014}
+\includegraphics[width=2.38cm]{sign-2014}
 \end{center}
 \end{titlepage}
 %\newpage
@@ -187,43 +189,47 @@
 
 \newpage
 \begin{mygroup}
+\renewcommand\baselinestretch{0.8} % FIXME Какой интервал тут реально получится?
 \thispagestyle{empty}
-\noindent УДК 681.3(075.8)\\ % (075.8) = Handbook
+\noindent УДК 681.3(075.8)\\[-0.5em] % (075.8) = Handbook
 % \noindent УДК~165:681.3.06+62-52\\
-\noindent ББК 32.97я73\\
+\noindent ББК 32.97я73\\[-0.5em]
 % ББК 87.4:32.973-01+32.813\\ % monograph
 \noindent\mbox{}\hspace{2em}К63
 \begin{center}\small
-Печатается по решению ученого совета ИМЭИ\\[2ex]
-\bfseries Издание выходит в рамках Программы\\
-стратегического развития ФГБОУ ВПО <<ИГУ>>\\
+\textit{Печатается по решению ученого совета ИМЭИ}\\[2ex]
+\bfseries Издание выходит в рамках Программы
+стратегического развития ФГБОУ ВПО <<ИГУ>>
 на 2012--2016 гг., проект Р121-02-001
 \end{center}
-\vspace{0.5ex}
+%\vspace{0.5ex}
 \begin{center}\small
  % \textbf{Авторы:}\\
  % Л.~В.~Рожина (часть 1 глава 1"=5), А.~А.~Ветров (приложения к части 1),\\
  % А.~Е.~Хмельнов (часть 2), Р.~К.~Фёдоров (часть 3), Е.~А.~Черкашин (часть 4)
   \textbf{Рецензенты:} \\
-  д-р~физ.-мат.~наук~{\em В.~И.~Сажин}, канд.~техн.~наук~{\em А.~О.~Шигаров}\\
+  д-р~физ.-мат.~наук~{\em В.~И.~Сажин}, канд.~техн.~наук~{\em А.~О.~Шигаров}
 \end{center}
-\vfill
+%\vfill
 \noindent\begin{minipage}[t]{2em}
-\noindent\mbox{}\\
+\noindent %\mbox{}\\
 К63
 \end{minipage}%
 \begin{minipage}[t]{0.95\linewidth}
 \setlength{\parindent}{5ex}
 Компьютерные науки\;: учеб. пособие. В 4 ч. -- Иркутск\;: Из-во ИГУ, 2014.
+%\vspace{-0.5em}
 
 %\noindent{\bfseries Черкашин~Е.~А.}
 
 Ч. 4. Системы искусственного интеллекта /~Е.~А.~Черкашин~-- \pageref{LastPage}~c.
+%\vspace{-0.5em}
 
-{\bfseries ISBN 978-5-9624-1255-9} (ч. 4)
+{ ISBN 978-5-9624-1255-9} (ч. 4)
+\vspace{-0.5em}
 
-{\bfseries ISBN 978-5-9624-1251-1}
-\vspace{2ex}
+{ ISBN 978-5-9624-1251-1}
+\vspace{1ex}
 
 \begingroup\footnotesize\parskip0pt
 \vspace{1ex}
@@ -238,23 +244,52 @@
 %В пособии представлены лекционные материалы и лабораторные работы курса <<Рекурсивно"=логическое программирование>>: базовые термины искусственного интеллекта, задачи, методы и их свойства; основы рекурсивно"=логического программирования на языке Пролог; типичные задачи, решение которых лаконично представляется как рекурсивные и переборные алгоритмы. Пособие содержит задания на лабораторный практикум по темам <<Формализация>>, <<Обработка списков>>, <<Метод Британского музея (отобразить и проверить)>> и <<Базы данных>>.
 
 %qwedkasjdhkj hПособие предназначено для студентов специальности <<инженер"=программист>>, <<инженер\,--\,системный программист>>. Изучение материала будет полезно студентами других специальностей, так или иначе связанных с программированием, формальной логикой и комбинаторикой.
-\mbox{}
+
+%\vspace{1em}
 \endgroup
-\end{minipage}
-\mbox{}\hspace{0.7\linewidth}
-\begin{minipage}{0.3\linewidth}\footnotesize\raggedleft
+\mbox{}\hfill\begin{minipage}{0.3\linewidth}\footnotesize\raggedleft
 \noindent УДК 681.3 (075.8)\\
 \noindent ББК 32.97я73
+%\vfill
 \end{minipage}
 
-Outfit.....
+%%%%%%\noindent\makebox[\linewidth]{\rule{\linewidth}{0.4pt}}
+\noindent\mbox{}\rule{\linewidth}{0.4pt}\vspace{-0.9em}\mbox{}
+\mbox{}\hfill{}{\footnotesize\itshape Учебное издание}
+\begin{center}\small
+{\sutitlefont КОМПЬЮТЕРНЫЕ НАУКИ\\
+В четырех частях\\
+Часть 4}\\[1em]
+{\sutitlefont Евгений Александрович Черкашин\\
+Системы искусственного интеллекта
+\\[1em]}
+
+\footnotesize
+Редактор \textit{В.~В.~Попова.
+} Дизайн обложки \textit{П.~О.~Ершов}\\[0.3em]
+%Верстка \textit{Е.~А.~Черкашин}
+%\vfill{}
+%{\small Макет подготовлен при помощи системы \LuaLaTeX\\\mbox{}}
+%\vfill{}
+
+Темплан 2014\,{}г. Поз.\,{}138. Подписано в печать 22.12.2014.
+
+Формат~60$\times$90/16. Усл.\,{}печ.\,{}л. 6,2. Уч.-изд.\,{}л.\,{}6,8.
+Тираж~100~экз. Заказ~182
+\vspace{0.3em}
+
+Издательство ИГУ; 664003, г.\,{}Иркутск, бульвар Гагарина, 36
+\mbox{}\rule{\linewidth}{0.4pt}\mbox{}
+\end{center}
 
 \vfill
+\end{minipage}
+\vspace{2em}
 \noindent\begin{minipage}[t]{0.35\linewidth}\footnotesize
 \noindent ISBN 978-5-9624-1255-9 (ч. 4)\\
 \noindent ISBN 978-5-9624-1251-1 \\
 \end{minipage}%
-\hspace{6em}
+\hspace{7em}
 \begin{minipage}[t]{0.65\linewidth}\footnotesize
 \begin{itemize}
 \setlength{\itemsep}{-0.5ex}
@@ -265,7 +300,8 @@ Outfit.....
 \end{itemize}
 \end{minipage}
 \end{mygroup}
-\clearpage
+\enlargethispage{3em}
+\newpage
 %\setcounter{page}{2}
 \tableofcontents
 \clearpage
@@ -314,7 +350,7 @@ Outfit.....
 
 \href{http://eugeneai.github.io/ais/}{\protect\includegraphics[width=0.4\linewidth]{QRickit.png}}
 
-Адрес сайта с методическим материалом:
+Адрес материала:
 
 \url{http://eugeneai.github.io/ais/}
 

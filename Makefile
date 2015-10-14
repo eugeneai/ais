@@ -22,8 +22,9 @@ view: all
 edit: emacs
 
 emacs:
-	emacsclient -c $(NAME).tex --alternate-editor emacs  &
-
+	# emacsclient -c $(NAME).tex --alternate-editor emacs  &
+	emacs $(NAME).tex  &
+	
 $(CNAME).pdf: $(NAME).pdf cover.jpg
 	convert cover.jpg cover.pdf
 	pdfunite $(NAME).pdf cover.pdf $(CNAME).pdf
