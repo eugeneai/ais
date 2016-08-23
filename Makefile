@@ -1,15 +1,14 @@
 NAME=ais
-#NAME=ais_diff
 CNAME=ais-with-cover
 # BIBROOT=$(PWD)/../..
 #	BIBINPUTS=$(BIBROOT) latexmk -pdfps -dvi- -ps- $(NAME)
 
-.PHONY: FORCE_MAKE clean view all emacs edit pics
+.PHONY: FORCE_MAKE clean view all emacs edit pics pdflatex
 
-all: $(NAME).pdf $(CNAME).pdf
+all: $(NAME).pdf #$(CNAME).pdf
 
 %.pdf: %.tex pics FORCE_MAKE
-	BIBINPUTS=$(BIBROOT) latexmk -f $<
+	BIBINPUTS=$(BIBROOT) latexmk $<
 
 clean:
 	BIBINPUTS=$(BIBROOT) latexmk -C
@@ -32,3 +31,6 @@ $(CNAME).pdf: $(NAME).pdf cover.jpg
 
 pics:
 	cd pics && make
+
+pdflatex: $(NAME).tex
+	BIBINPUTS=$(BIBROOT) latexmk -r .pdflatexmkrc $<
