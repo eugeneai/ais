@@ -1,9 +1,14 @@
 NAME=ais
 CNAME=ais-with-cover
+PAN_MATH=--mathjax
+#PAN_MATH=--webtex
+#PAN_MATH=--mathml
+#PAN_MATH=--latexmathml
+
 # BIBROOT=$(PWD)/../..
 #	BIBINPUTS=$(BIBROOT) latexmk -pdfps -dvi- -ps- $(NAME)
 
-.PHONY: FORCE_MAKE clean view all emacs edit pics pdflatex
+.PHONY: FORCE_MAKE clean view all emacs edit pics pdflatex html
 
 all: $(NAME).pdf #$(CNAME).pdf
 
@@ -33,3 +38,8 @@ pics:
 
 pdflatex: $(NAME).tex
 	BIBINPUTS=$(BIBROOT) latexmk -r .pdflatexmkrc $<
+
+html: $(NAME).html
+
+%.html: %.tex 
+	pandoc -s -S -N --top-level-division=chapter --section-divs -t html5 $(PAN_MATH) $< -o $(shell basename -s .tex $<).html
