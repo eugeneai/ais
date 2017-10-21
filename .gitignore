@@ -4,8 +4,6 @@
 *.log
 *.dvi
 *.toc
-ais2.fdb_latexmk
-ais2.fls
 _TZ_*.tex
 *~
 *.bak
@@ -13,3 +11,9 @@ _TZ_*.tex
 *.thm
 *synctex*
 auto/
+_minted-ais/
+*.fdb_latexmk
+*.fls
+paropt/
+pics/*.pdf_tex
+

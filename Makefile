@@ -3,7 +3,9 @@ MNAME=ais2
 # BIBROOT=$(PWD)/../..
 #	BIBINPUTS=$(BIBROOT) latexmk -pdfps -dvi- -ps- $(NAME)
 
-.PHONY: FORCE_MAKE clean view all emacs edit
+PAN_MATH=--mathjax
+
+.PHONY: FORCE_MAKE clean view all emacs edit html
 
 all: $(NAME).pdf
 
@@ -24,3 +26,9 @@ emacs:
 
 $(NAME).pdf: $(MNAME).pdf cover.jpg
 	pdfjoin -o $(NAME).pdf -- $(MNAME).pdf cover.jpg
+
+html: $(MNAME).html
+
+%.html: %.tex
+	pandoc -s -S -N --top-level-division=chapter --section-divs -t html5 $(PAN_MATH) $< -o $(shell basename -s .tex $<).html
+
